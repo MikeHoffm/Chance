@@ -1,0 +1,33 @@
+body {
+    background-image: url("images/bkg.jpg");
+    color: black;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    border: 5px solid red;
+    height: 30em;
+    width: 30em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20%;
+    flex-wrap: wrap;
+    row-gap: 2%;
+    
+}
+
+main>div {
+    border: 5px solid blue;
+    width: 25%;
+    background-color: white;
+    height: 25%;
+}
+
+
+
