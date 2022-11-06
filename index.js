@@ -18,11 +18,21 @@
     let four = document.querySelector(".four");
 
 
+/* Dice Roll Sound */
+let diceSound = new Audio('sounds/diceRoll.mp3');
+
+
 /* Button for Roll Dice */
     const rollBtn = document.querySelector(".roll");
 
     rollBtn.addEventListener('click', function(){
+    diceSound.play();
     dicePicks = [];
+        
+    one.classList.toggle('rotate1');
+    two.classList.toggle('rotate2');
+    three.classList.toggle('rotate2');
+    four.classList.toggle('rotate1');
 
         diceElements.forEach((dice) => {
             rando();
