@@ -5,23 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/watto.png">
     <title>Chance Dice</title>
 </head>
 <body>
     
     <header>
-        <h1>Roll The Dice</h1>
+        <h1>Chance Dice</h1>
+        <p>Settle all your disputes with a simple button click!</p>
         <h2 class="roll">Press me to Roll</h2>
     </header>
 
     <main>
-        <div class="dice one rotate1">1</div>
-        <div class="dice two rotate2">2</div>
-        <div class="dice three rotate2">3</div>
-        <div class="dice four rotate1">4</div>
+        <div class="dice one rotate1">
+            <div class="d1"></div>
+        </div>
+
+        <div class="dice two rotate2">
+            <div class="d2"></div>
+        </div>
+
+        <div class="dice three rotate2">
+            <div class="d3"></div>
+        </div>
+
+        <div class="dice four rotate1">
+            <div class="d4"></div>
+        </div>
+
     </main>
 
-    <footer>Created by MikeDev</footer>
+    <footer>
+        Created by
+        <a traget="_blank" rel="noopener noreferrer" href='https://twitter.com/Mike_TheDev'>Mike_TheDev</a>
+    </footer>
 
 <script src="index.js"></script>
 </body>

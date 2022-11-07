@@ -9,6 +9,7 @@
 /*Selecting Die through DOM*/
     const diceElements = document.querySelectorAll('.dice')
 
+
     let one = document.querySelector(".one");
 
     let two = document.querySelector(".two");
@@ -17,10 +18,21 @@
 
     let four = document.querySelector(".four");
 
+/*Inner Dice Color */
+
+    let dOne = document.querySelector(".d1");
+
+    let dTwo = document.querySelector(".d2");
+
+    let dThree = document.querySelector(".d3");
+
+    let dFour = document.querySelector(".d4");
+
+
 
 /* Dice Roll Sound */
 let diceSound = new Audio('sounds/diceRoll.mp3');
-
+diceSound.playbackRate = 0.9;
 
 /* Button for Roll Dice */
     const rollBtn = document.querySelector(".roll");
@@ -33,6 +45,7 @@ let diceSound = new Audio('sounds/diceRoll.mp3');
     two.classList.toggle('rotate2');
     three.classList.toggle('rotate2');
     four.classList.toggle('rotate1');
+
 
         diceElements.forEach((dice) => {
             rando();
@@ -56,26 +69,26 @@ let diceSound = new Audio('sounds/diceRoll.mp3');
 /* Function to change Die based on rolls */
     function changeColor() {
         if (dicePicks[0] == 'red'){
-            one.style.backgroundColor = 'red';
+            dOne.style.backgroundColor = 'rgb(237, 43, 78)';
         } else if (dicePicks[0] == 'blue') {
-            one.style.backgroundColor = 'blue';
+            dOne.style.backgroundColor = 'rgb(0, 167, 255)';
         }
 
         if (dicePicks[1] == 'red'){
-            two.style.backgroundColor = 'red';
+            dTwo.style.backgroundColor = 'rgb(237, 43, 78)';
         } else if (dicePicks[1] == 'blue') {
-            two.style.backgroundColor = 'blue';
+            dTwo.style.backgroundColor = 'rgb(0, 167, 255)';
         }
 
         if (dicePicks[2] == 'red'){
-            three.style.backgroundColor = 'red';
+            dThree.style.backgroundColor = 'rgb(237, 43, 78)';
         } else if (dicePicks[2] == 'blue') {
-            three.style.backgroundColor = 'blue';
+            dThree.style.backgroundColor = 'rgb(0, 167, 255)';
         }
 
         if (dicePicks[3] == 'red'){
-            four.style.backgroundColor = 'red';
+            dFour.style.backgroundColor = 'rgb(237, 43, 78)';
         } else if (dicePicks[3] == 'blue') {
-            four.style.backgroundColor = 'blue';
+            dFour.style.backgroundColor = 'rgb(0, 167, 255)';
         }
     }
